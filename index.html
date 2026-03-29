@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Wheather App</title>
+  </head>
+  <body>
+    <div
+      class="content flex items-center justify-center h-screen bg-neutral-950"
+    >
+      <div
+        class="flex flex-col justify-center items-center p-4 gap-10"
+      >
+        <h1 class="text-3xl text-gray-200">What is the Wheather?</h1>
+        <form id="form" class="flex flex-col md:flex-row w-full items-stretch justify-between gap-4 md:items-end">
+          <div class="p-0 m-0 flex flex-col">
+            <label class="text-gray-400" for="latitude">Latitude:</label>
+            <input
+              id="latitude"
+              class="border rounded-lg p-2 border-gray-400 text-gray-400 focus:outline-none"
+              placeholder="Write your latitude..."
+              type="text"
+            />
+          </div>
+          <div class="p-0 m-0 flex flex-col">
+            <label class="text-gray-400" for="longitude">Longitude:</label>
+            <input
+              id="longitude"
+              class="border rounded-lg p-2 border-gray-400 text-gray-400 focus:outline-none"
+              placeholder="Write your longitude..."
+              type="text"
+            />
+          </div>
+          <button class="bg-gray-200 p-2 md:pl-10 md:pr-10 rounded-lg font-semibold">Search</button>
+        </form>
+        <div id="weather-div" class=""></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
